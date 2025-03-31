@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
+      "src": "public/**/*.html",
       "use": "@vercel/static"
     }
   ],
   "rewrites": [
     {
-      "source": "/which-is-better-AdGuard-Home-or-Pi-hole",
-      "destination": "/index.html"
-    },
-    {
       "source": "/which-is-better-AdGuard-Home-or-Pi-hole/",
-      "destination": "/index.html"
+      "destination": "/public/which-is-better-AdGuard-Home-or-Pi-hole/index.html"
     },
     {
-      "source": "/",
-      "destination": "/index.html"
+      "source": "/which-is-better-AdGuard-Home-or-Pi-hole",
+      "destination": "/public/which-is-better-AdGuard-Home-or-Pi-hole/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/public/$1"
     }
   ],
   "redirects": [
