@@ -20,5 +20,12 @@
       "destination": "/index.html"
     }
   ],
+  "redirects": [
+    {
+      "source": "/which-is-better-AdGuard-Home-or-Pi-hole",
+      "destination": "/which-is-better-AdGuard-Home-or-Pi-hole/",
+      "permanent": true
+    }
+  ],
   "cleanUrls": true
 }
